@@ -59,16 +59,16 @@ function updateCanvas() {
   textAlign(CENTER, CENTER);
   fill("white");
   const text1 = "Shortcut of the day:";
-  text(text1, width / 2 + 40, height / 2 - 100);
+  text(text1, width / 2 + 40, height / 2 - 80);
 
   push();
   textSize(80);
   textStyle(BOLD);
-  text(text2, width / 2, height / 2 + 15);
+  text(text2, width / 2, height / 2 + 35);
   pop();
 
   const imgX = 20;
-  const imgY = 35;
+  const imgY = 55;
   image(img, imgX, imgY, 120, 120);
 }
 
