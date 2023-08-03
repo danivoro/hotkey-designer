@@ -4,7 +4,6 @@ let canvas;
 let backgroundImage;
 let img;
 
-// Call preload() before setup() to load images
 preload();
 setup();
 
@@ -73,13 +72,8 @@ function updateCanvas() {
 }
 
 function downloadCanvas() {
-  // Get the canvas element
   const canvasElement = document.getElementById("defaultCanvas0");
-
-  // Get the data URL of the canvas
   const dataURL = canvasElement.toDataURL();
-
-  // Set the data URL as the href attribute of the anchor element
   const downloadLink = document.getElementById("download-button");
   downloadLink.href = dataURL;
 }
